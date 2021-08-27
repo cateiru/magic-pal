@@ -1,5 +1,15 @@
-const index = () => {
-    return <>Hello World</>
-}
+import IndexPage from '../components/IndexPage';
+import Head from 'next/head';
 
-export default index
+const index = () => {
+  return (
+    <>
+      <Head>
+        <title>Magic pal</title>
+      </Head>
+      <IndexPage />
+    </>
+  );
+};
+
+export default index;
